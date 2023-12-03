@@ -24,3 +24,7 @@ phases:
   post_build:
     commands:
       - echo "Build completed successfully"
+  artifacts:
+  files:
+    - '**/*'
+  base-directory: ../Kaizen_App_Pipeline
