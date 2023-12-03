@@ -1,0 +1,85 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kaizen Art</title>
+	<style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure that the body takes at least the full height of the viewport */
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Rage Italic', cursive;
+			font-size: 2rem;
+        }
+		
+        #header{
+		    width: 100%;
+            text-align: center;
+			padding: 20px;
+            background-color: #333; /* Choose a suitable color for the header background */	
+			font-family: 'Kristen ITC';
+			font-size: 2rem;
+			
+		}
+		#header img {
+            position: absolute;
+            top: 10px; /* Adjust the top property to move the image down */
+            left: 10px; /* Adjust the left property to move the image right
+            max-width: 200px; /* Adjust the max-width as needed */
+            max-height: 200px; /* Adjust the max-height as needed */
+			border-radius: 50%; /* Make the image round */
+        }
+        #content {
+		    width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+		}
+        #footer {
+            width: 100%;
+            text-align: center;
+			padding: 10px;
+            background-color: #333; /* Choose a suitable color for the footer background */
+        }
+
+        #image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			flex-grow: 1; /* Allow the image to take up remaining vertical space */
+        }
+
+        #image img {
+            max-width: 15%; /* Adjust the max-width as needed */
+            max-height: 15%; /* Adjust the max-height as needed */
+			border-radius: 50%; /* Make the image round */
+        }
+		
+		
+    </style>
+
+</head>
+<body>
+    <div id="header">
+	    <img src="{% static 'icon.jpg' %}" alt="Logo">
+        <h1>Kaizen</h1>
+    </div>
+
+    <div id="content">
+        <p>Trying to paint like a pro, but my masterpiece looks more like a doodle with ambition. 
+    </div>
+
+    <div id="image">
+        <img src="{% static 'doodle.jpg' %}" alt="Center Image">
+    </div>
+
+    <div id="footer">
+        <p>@Kaizen Art 2023</p>
+    </div>
+	
+	
+</body>
+</html>
